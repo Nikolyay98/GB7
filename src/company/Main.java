@@ -1,5 +1,4 @@
 package company;
-
 public class Main {
     public static void mai(String [] args){
         Cat[] cats = new Cat[3];

@@ -1,5 +1,4 @@
 package company;
-
 public class Cat {
     private String name;
     private boolean isFull;
@@ -7,8 +6,7 @@ public class Cat {
     public Cat(String name, int appetite){
         this.name = name;
         this.appetite = appetite;
-        isFull = false;
-    }
+        isFull = false; }
     public void eat(Plate plate){
         if(plate.hasEnoughFood(appetite) && !isFull) {
             plate.decreaseFood(appetite);
@@ -18,6 +16,7 @@ public class Cat {
         else if(isFull){
             System.out.println(name + "не хочет кушать");
         }
+
         else{
             System.out.println("Мало еды в тарелке для" + name);
         }

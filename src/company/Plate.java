@@ -1,5 +1,4 @@
 package company;
-
 public class Plate {
     private int food;
     public Plate(int foo){
@@ -9,8 +8,7 @@ public class Plate {
         this.food += food;
     }
     public void decreaseFood(int appetite){
-        food = food - appetite;
-    }
+        food = food - appetite; }
     public boolean hasEnoughFood(int appetite){
         return appetite <= food;
     }
